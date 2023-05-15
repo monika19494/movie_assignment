@@ -1,0 +1,42 @@
+.row{
+    border: 1px solid black;
+    /* height: 15vh;
+    width: 10vw; */
+   
+    color: black;
+    font-weight: bolder;
+    display:inline-block;
+    margin: auto;
+}
+.container{
+ height: 8ovh;
+ width: 100%;
+ background-color: white;
+ border: 1px solod black;
+ text-align: center;
+}
+.card{
+   height: 25vh;
+   width: 20vw;
+   border: 1px solid black;
+   text-align: center;
+   background-color:aquamarine;
+
+}
+.title{
+    font-size: larger;
+    color: blue;
+    
+    font-weight: bolder;
+}
+.date{
+    position: relative;
+    top:50%;
+    right:30%;
+    font-size: large;
+}
+.rating{
+    position: relative;
+    top: 50%;
+    font-size: large;
+}

@@ -1,0 +1,121 @@
+import React, { useState, useEffect } from 'react';
+import MovieList from './components/MovieList';
+import "./App.css";
+
+
+const App = () => {
+  const [movies, setMovies] = useState([
+    {
+     "Title": " The Godfather ",
+     "Year": "1972",
+     "Rating": "9.2"
+     },
+     {
+      "Title": " The Dark Knight  ",
+      "Year": "2008",
+      "Rating": "9.0"
+      },
+      {
+        "Title": " 12 Angry Men ",
+        "Year": "1957",
+        "Rating": "9.0"
+        },
+        {
+          "Title": "  Schindler's List ",
+          "Year": "1993",
+          "Rating": "8.9"
+          },
+          {
+            "Title": " The Lord of the Rings: The Return of the King  ",
+            "Year": "2003",
+            "Rating": "8.9"
+            },
+            {
+              "Title": " Pulp Fiction ",
+              "Year": "1994",
+              "Rating": "8.8"
+              },
+              {
+                "Title": "  The Good, the Bad and the Ugly  ",
+                "Year": "1966",
+                "Rating": "8.8"
+                },
+                {
+                  "Title": "  Forrest Gump ",
+                  "Year": "1994",
+                  "Rating": "8.8"
+                  },
+                  {
+                    "Title": " Fight Club ",
+                    "Year": "1999",
+                    "Rating": "8.7"
+                    },
+                    {
+                      "Title": "  The Lord of the Rings: The Two Towers ",
+                      "Year": " 2002",
+                      "Rating": "8.7"
+                      },
+                      {
+                        "Title": "  Inception ",
+                        "Year": " 2010",
+                        "Rating": "8.7"
+                        },
+
+                        {
+                          "Title": "  Star Wars: Episode V - The Empire Strikes Back",
+                          "Year": " 1987",
+                          "Rating": "8.7"
+                          },
+                          {
+                            "Title": "   The Matrix ",
+                            "Year": " 1999",
+                            "Rating": "8.7"
+                            },
+                            {
+                              "Title": "   Goodfellas ",
+                              "Year": " 1990",
+                              "Rating": "8.7"
+                              },
+                              {
+                                "Title": " One Flew Over the Cuckoo's Nest  ",
+                                "Year": " 1975",
+                                "Rating": "8.6"
+                                },
+                                {
+                                  "Title": "   Se7en ",
+                                  "Year": "1995",
+                                  "Rating": "8.6"
+                                  },
+                                  {
+                                    "Title": " It's a Wonderful Life ",
+                                    "Year": "1946",
+                                    "Rating": "8.6"
+                                    },
+                                    {
+                                      "Title": "   Seven Samurai  ",
+                                      "Year": "1954",
+                                      "Rating": "8.6"
+                                      },
+                                      {
+                                        "Title": " The Silence of the Lambs ",
+                                        "Year": "1991",
+                                        "Rating": "8.6"
+                                        },
+                                        {
+                                          "Title": "  City of God ",
+                                          "Year": " 2002",
+                                          "Rating": "8.6"
+                                          },                                                                                                                                                                                  
+
+])
+  return (
+    <div className='container'> 
+    <div className='row'>
+     <MovieList movies={movies}/>
+    </div>
+      
+    </div>
+  );
+}
+
+export default App;
